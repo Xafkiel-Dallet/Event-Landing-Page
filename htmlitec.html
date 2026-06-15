@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITD Celebration 2026</title>
+  
+  <link rel="stylesheet" href="cssfinals.css">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="background"></div>
+  <div class="overlay"></div>
+  
+  <div class="content">
+    <h1 class="fade-in">ITD Day Celebration 2026</h1>
+    
+    <p class="fade-in">
+      The <strong>ITD Day Celebration</strong> is a special event for the 
+      <em>Information Technology Department</em> of Cavite State University - Naic Campus. 
+      This year's theme is <mark>Super Mario</mark>, making the celebration 
+      <u>fun, colorful, and exciting.</u>
+    </p>
+    
+    <p class="fade-in">
+      The event includes various games, performances, and competitions that showcase 
+      the talents of students. It also gives recognition to those who worked hard during the school year.
+    </p>
+    
+    <div class="image-stack">
+      <img src="itd1.jpg" alt="ITD Celebration Photo 1" class="fade-in">
+      <img src="itd2.jpg" alt="ITD Celebration Photo 2" class="fade-in">
+      <img src="itd3.jpg" alt="ITD Celebration Photo 3" class="fade-in">
+    </div>
+    
+    <div class="schedule">
+      <h2 class="fade-in">Activities</h2>
+      <ul class="fade-in">
+        <li>Mobile Legends Competition</li>
+        <li>Tech Expo 2026</li>
+        <li>Energizer Games</li>
+        <li>ITD Got Talent 2026</li>
+        <li>Awarding Ceremony</li>
+      </ul>
+      
+      <h2 class="fade-in">Schedule of Activities</h2>
+      
+      <h3 class="fade-in">Day 1</h3>
+      <ol class="fade-in"> 
+        <li>9:05 AM - 9:10 AM: Event Overview and Mechanics</li>
+        <li>9:10 AM - 10:10 AM: Mobile Legends Competition</li>
+        <li>10:00 AM - 12:00 PM: Energizer Games</li>
+        <li>10:10 AM onwards: Tech Expo 2026 Parallel Session</li>
+        <li>10:50 AM - 11:00 AM: Special Performance</li>
+        <li>12:00 PM - 1:00 PM: Lunch Break</li>
+        <li>1:00 PM - 1:10 PM: Announcement of ITD Got Talent Mechanics and Judges</li>
+        <li>2:00 PM - 4:00 PM: ITD Got Talent 2026</li>
+        <li>2:10 PM - 2:40 PM: Special Performance</li>
+        <li>4:30 PM - 4:50 PM: Day 1 Closing and Preview of Day 2 Events</li>
+        <li>4:50 PM - 5:00 PM: CvSU Hymn and CvSU Naic March</li>
+      </ol>
+      
+      <h3 class="fade-in">Day 2</h3>
+      <ol class="fade-in">
+        <li>8:00 AM - 9:00 AM: Registration</li>
+        <li>8:00 AM onwards: CODM Competition</li>
+        <li>9:00 AM - 9:20 AM: Inspirational Message</li>
+        <li>9:05 AM onwards: Code Rush, RJ45 Race, Keyboard Warriors (Parallel Session)</li>
+        <li>10:05 AM - 12:00 PM: Energizer Games</li>
+        <li>10:50 AM onwards: Special Performance</li>
+        <li>12:00 PM - 1:00 PM: Lunch Break</li>
+        <li>1:00 PM - 2:00 PM: Viewing of Faculty vs ICTSO and CSSO (Mobile Legends)</li>
+        <li>2:00 PM - 5:00 PM: Retrocode Runway</li>
+        <li>3:00 PM - 3:30 PM: Special Performance</li>
+        <li>5:00 PM - 6:00 PM: Awarding Ceremony</li>
+        <li>6:00 PM - 6:20 PM: Closing Remarks</li>
+        <li>6:20 PM - 6:30 PM: CvSU Hymn and Naic March</li>
+      </ol>
+    </div>
+    
+    <div class="button-container fade-in">
+      <a href="https://www.facebook.com/share/1HSFZ9qHng/" class="bottom-link" target="_blank">
+        ICTSO CvSU
+      </a>
+      <a href="https://www.facebook.com/share/1baK9YbeiJ/" class="bottom-link" target="_blank">
+        CvSU Naic
+      </a>
+      <a href="https://youtu.be/xtRFSaSUtuQ?si=Ni1KifALlOZO-wze" class="bottom-link" target="_blank">
+       My Progression
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

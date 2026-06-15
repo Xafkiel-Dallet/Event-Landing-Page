@@ -1,0 +1,143 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-bottom: 80px;
+    max-width: 800px;
+}
+
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.content p {
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.image-stack img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.schedule {
+    margin: 40px auto;
+    text-align: left;
+    max-width: 700px;
+}
+
+.schedule h2 {
+    font-size: 28px;
+    margin: 35px 0 15px 0;
+    color: white;
+    text-align: center;
+}
+
+.schedule h3 {
+    font-size: 22px;
+    margin: 25px 0 10px 0;
+    color: #ffd700;
+}
+
+.schedule ul,
+.schedule ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.schedule li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.bottom-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 32px;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.bottom-link:hover {
+    background-color: white;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-stack img:nth-child(1) { transition-delay: 0.1s; }
+.image-stack img:nth-child(2) { transition-delay: 0.3s; }
+.image-stack img:nth-child(3) { transition-delay: 0.5s; }
